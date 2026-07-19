@@ -5,24 +5,30 @@ nav {
     width: 100%;
     height: fit-content;
     background-color: rgb(252, 249, 248, .8);
+    animation: pop 0.5s alternate ease;
+    z-index: 999;
 }
 
 nav .container {
     margin-block: 0;
 }
-nav  img {
+
+nav img {
     width: 100px;
 }
-nav .container .navbar-content{
+
+nav .container .navbar-content {
     margin: 10px 0;
 }
-nav .navbar-content ul li{
+
+nav .navbar-content ul li {
     position: relative;
     margin-inline: 5px;
     font-size: 14px;
     width: fit-content;
 }
-nav .navbar-content ul li::after{
+
+nav .navbar-content ul li::after {
     content: "";
     position: absolute;
     display: block;
@@ -32,15 +38,19 @@ nav .navbar-content ul li::after{
     background-color: var(--primary-color);
     transition-duration: .5s;
 }
-nav .navbar-content ul li:hover:after{
+
+nav .navbar-content ul li:hover:after {
     width: 100%;
 }
-nav .navbar-content ul li.active::after  {
+
+nav .navbar-content ul li.active::after {
     width: 100%;
 }
-nav .navbar-content ul li .active{
+
+nav .navbar-content ul li .active {
     color: var(--primary-color);
 }
+
 nav .navbar-content .icons a {
     color: var(--primary-color);
     margin-left: 15px;
@@ -69,22 +79,28 @@ header .container .part-1 {
 }
 
 header .container .part-1 .caption {
+    position: relative;
     font-size: 14px;
     color: var(--primary-color);
+    animation: pop 0.5s alternate ease;
 }
+
 
 header .container .part-1 h1 {
     font-size: 50px;
     color: var(--text-color);
     width: 50%;
     margin: 20px 0px;
+    animation: pop 0.5s alternate ease;
 }
 
 header .container .part-1 p {
     color: var(--paragraph-color);
     width: 80%;
     margin-bottom: 20px;
+    animation: pop 0.5s alternate ease;
 }
+
 
 header .container .part-1 .buttons button {
     margin-right: 10px;
@@ -94,6 +110,7 @@ header .container .part-1 .buttons button {
     border: 1px solid #000;
     cursor: pointer;
     transition-duration: .5s;
+    animation: pop 0.5s alternate ease;
 }
 
 header .container .part-1 button:first-child:hover {
@@ -121,6 +138,7 @@ header .container .part-2 {
     border-radius: var(--border-r);
     overflow: hidden;
     height: stretch;
+    animation: pop 1s alternate ease;
 }
 
 header .container .part-2::before {
@@ -174,4 +192,52 @@ header .container .part-2 .content p {
 header .container .part-2 .content h3 {
     width: 70%;
     font-size: 16px;
+}
+
+/**  Browse Section  */
+#collections .container .title h2 {
+    position: relative;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+#collections .container .title h2::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+#collections .container .collection {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+#collections .container .collection .box {
+    width: calc(100% / 6);
+}
+
+#collections .container .collection .box .item {
+    width: 90%;
+    margin: auto;
+    border-radius: var(--border-r);
+    overflow: hidden;
+}
+
+#collections .container .collection .box .item img {
+    width: 100%;
+    transition-duration: .5s;
+    filter: blur(1px);
+    filter: brightness(70%);
+}
+#collections .container .collection .box .item:hover img{
+    filter: brightness(100%);
+    filter: blur(0);
+    transform: scale(1.1);
 }
