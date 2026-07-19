@@ -1,17 +1,130 @@
 /* 350 */
-@media (max-width: 1300px) {}
+@media (max-width: 1300px) {
+
+    /*& Navbar Section */
+    nav .container {
+        position: relative;
+    }
+
+    nav .container .navbar-content {
+        position: relative;
+        background-color: rgb(252, 249, 248, .8);
+    }
+
+    nav .container .navbar-toggler {
+        padding: 2px 5px;
+        margin-bottom: 15px;
+    }
+
+    nav .container .navbar-toggler:focus {
+        box-shadow: 0 0 0 0 transparent;
+    }
+
+    /*& Header Section */
+    header .container {
+        flex-direction: column;
+    }
+
+    header .container .part-1 {
+        width: 100%;
+        margin: 20px;
+        text-align: center;
+    }
+
+    header .container .part-1 .caption {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    header .container .part-1 h1 {
+        font-size: 30px;
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+    header .container .part-1 p {
+        margin-bottom: 10px;
+        font-size: 12px;
+        width: 100%;
+    }
+
+    header .container .part-1 .buttons button {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    header .container .part-2 {
+        width: 100%;
+    }
+
+}
 
 /* 450 */
-@media (min-width: 371px) and (max-width: 1300px) {}
+@media (min-width: 371px) and (max-width: 1300px) {
+
+    /*& Header Section */
+    header .container .part-2 {
+        width: 300px;
+    }
+}
 
 /* 650 */
-@media (min-width: 577px) and (max-width: 1300px) {}
+@media (min-width: 577px) and (max-width: 1300px) {
+
+    /*& Header Section */
+    header .container .part-1 .caption {
+        font-size: 14px;
+    }
+
+    header .container .part-1 h1 {
+        font-size: 40px;
+        margin: 20px 0px;
+    }
+
+    header .container .part-1 p {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+}
 
 /* 850 */
-@media (min-width: 769px) and (max-width: 1300px) {}
+@media (min-width: 769px) and (max-width: 1300px) {
+
+    /*& Header Section */
+    header .container {
+        flex-direction: row;
+    }
+    
+    header .container .part-1 {
+        width: 50%;
+        margin: 0px;
+        text-align: start;
+    }
+    header .container .part-1 .buttons button {
+        padding: 8px 18px;
+        font-size: 12px;
+    }
+
+}
 
 /* 1050 */
-@media (min-width: 992px) and (max-width: 1300px) {}
+@media (min-width: 992px) and (max-width: 1300px) {
+
+    /*& Navbar Section */
+    nav .container {
+        position: initial;
+    }
+
+    nav .container .navbar-content {
+        position: initial;
+        background-color: rgb(252, 249, 248, .8);
+    }
+        /*& Header Section */
+    header .container .part-1 h1 {
+        font-size: 45px;
+    }
+
+}
 
 /* 1250 */
 @media (min-width: 1181px) and (max-width: 1300px) {}

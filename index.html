@@ -14,9 +14,10 @@
     <meta property="og:image" content="https://mando157.github.io/Gym-Plus/images/g7-9ead7675.jpg" />
     <meta property="og:url" content="https://mando157.github.io/Gym-Plus/" />
 
-    <link rel="icon" href="./images/logo.png">
+    <link rel="icon" href="./images/Browser-logo.png">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style.responsive.css">
@@ -25,6 +26,42 @@
 </head>
 
 <body>
+    <!--*-------- Navbar Section --------*-->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+            <img class="navbar-brand" src="./images/logo.png" alt="">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-content collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link active" aria-current="page" href="#">COLLECTIONS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BOUTIQUE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">JOURNAL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ATELIER</a>
+                    </li>
+                </ul>
+
+                <div class="icons d-flex">
+                    <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
     <!--*-------- Header Section --------*-->
     <header id="Home">
         <div class="container">
@@ -52,6 +89,8 @@
             </div>
         </div>
     </header>
+
+    <script src="./js/bootstrap.bundle.js"></script>
 </body>
 
 </html>

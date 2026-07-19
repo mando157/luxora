@@ -1,6 +1,59 @@
+/** Navbar Section*/
+nav {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(252, 249, 248, .8);
+}
+
+nav .container {
+    margin-block: 0;
+}
+nav  img {
+    width: 100px;
+}
+nav .container .navbar-content{
+    margin: 10px 0;
+}
+nav .navbar-content ul li{
+    position: relative;
+    margin-inline: 5px;
+    font-size: 14px;
+    width: fit-content;
+}
+nav .navbar-content ul li::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0%;
+    height: 2px;
+    bottom: 5px;
+    background-color: var(--primary-color);
+    transition-duration: .5s;
+}
+nav .navbar-content ul li:hover:after{
+    width: 100%;
+}
+nav .navbar-content ul li.active::after  {
+    width: 100%;
+}
+nav .navbar-content ul li .active{
+    color: var(--primary-color);
+}
+nav .navbar-content .icons a {
+    color: var(--primary-color);
+    margin-left: 15px;
+    transition-duration: .5s;
+}
+
+nav .navbar-content .icons a:hover {
+    color: var(--primary-hover);
+}
+
 /** Header Section */
 header {
-    height: 100dvh;
+    height: calc(100vh - 80px);
 }
 
 header .container {
@@ -45,7 +98,7 @@ header .container .part-1 .buttons button {
 
 header .container .part-1 button:first-child:hover {
     border-color: transparent;
-    background-color: var(--primary-color);
+    background-color: var(--primary-hover);
     color: #000;
 }
 
@@ -104,7 +157,8 @@ header .container .part-2 .content {
     border-radius: 0 var(--border-r);
     z-index: 3;
 }
-header .container .part-2:hover .content{
+
+header .container .part-2:hover .content {
     transition-duration: .5s;
     transition-delay: 1s;
     bottom: 0%;
