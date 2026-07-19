@@ -1,0 +1,47 @@
+:root {
+    --primary-color: rgb(115, 91, 36);
+    --primary-hover: #b99758;
+    --text-color:#1B1C1C;
+    --paragraph-color:#7C7B7B;
+    --section-bg: #F8F8F8;
+    --border-r: 10px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #FCF9F8;
+    height: 5000px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Playfair Display", serif;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+li{
+    list-style: none;
+}
+section {
+    padding: 30px 0px;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}

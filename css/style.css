@@ -1,0 +1,123 @@
+/** Header Section */
+header {
+    height: 100dvh;
+}
+
+header .container {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*^ Header part 1 */
+header .container .part-1 {
+    width: 50%;
+}
+
+header .container .part-1 .caption {
+    font-size: 14px;
+    color: var(--primary-color);
+}
+
+header .container .part-1 h1 {
+    font-size: 50px;
+    color: var(--text-color);
+    width: 50%;
+    margin: 20px 0px;
+}
+
+header .container .part-1 p {
+    color: var(--paragraph-color);
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+header .container .part-1 .buttons button {
+    margin-right: 10px;
+    padding: 10px 25px;
+    background-color: black;
+    border-radius: var(--border-r);
+    border: 1px solid #000;
+    cursor: pointer;
+    transition-duration: .5s;
+}
+
+header .container .part-1 button:first-child:hover {
+    border-color: transparent;
+    background-color: var(--primary-color);
+    color: #000;
+}
+
+header .container .part-1 button:last-child {
+    background-color: #fff;
+}
+
+header .container .part-1 button:last-child a {
+    color: #000;
+}
+
+header .container .part-1 button:last-child:hover {
+    background-color: rgba(0, 0, 0, 0.137);
+}
+
+/*^ Header part 2 */
+header .container .part-2 {
+    position: relative;
+    width: 400px;
+    border-radius: var(--border-r);
+    overflow: hidden;
+    height: stretch;
+}
+
+header .container .part-2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0%;
+    height: 0%;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0, .5);
+    transition-duration: 1s;
+}
+
+header .container .part-2:hover:before {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-r);
+}
+
+header .container .part-2 img {
+    width: 100%;
+    height: 100%;
+}
+
+header .container .part-2 .content {
+    position: absolute;
+    bottom: -100%;
+    padding: 15px;
+    padding-right: 0px;
+    background-color: rgb(255, 255, 255, .8);
+    border-radius: 0 var(--border-r);
+    z-index: 3;
+}
+header .container .part-2:hover .content{
+    transition-duration: .5s;
+    transition-delay: 1s;
+    bottom: 0%;
+}
+
+header .container .part-2 .content p {
+    font-size: 12px;
+    margin-bottom: 5px;
+    width: 70%;
+    color: var(--primary-color);
+}
+
+header .container .part-2 .content h3 {
+    width: 70%;
+    font-size: 16px;
+}
