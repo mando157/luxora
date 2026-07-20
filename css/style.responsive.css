@@ -105,6 +105,23 @@
         font-size: 12px;
     }
 
+    /*& Services Section */
+    #Services .services-container .group .service {
+        height: 140px;
+    }
+
+    #Services .services-container .group .service i {
+        font-size: 18px;
+    }
+
+    #Services .services-container .group .service h4 {
+        font-size: 14px;
+    }
+
+    #Services .services-container .group .service p {
+        font-size: 12px;
+    }
+
 }
 
 /* 450 */
@@ -189,6 +206,9 @@
         padding: 8px 20px;
         font-size: 14px;
     }
+
+    /*& Services Section */
+
 }
 
 /* 850 */

@@ -9,3 +9,13 @@
         opacity: 1;
     }
 }
+
+@keyframes slider {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(calc(-100% - 10px));
+    }
+}

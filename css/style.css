@@ -410,9 +410,66 @@ header .container .part-2 .content h3 {
     background-color: var(--primary-hover);
     color: #fff;
 }
-#Announcement .container .content a i{
+
+#Announcement .container .content a i {
     transition-duration: .3s;
 }
+
 #Announcement .container .content a:hover i {
     transform: translateX(5px);
+}
+
+/** Services Section */
+#Services {
+    background-color: #F6F3F2;
+}
+
+#Services .services-container {
+    display: flex;
+    overflow: auto;
+    scrollbar-width: none;
+    width: 90%;
+    margin: auto;
+}
+
+#Services .services-container .group {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-right: 10px;
+    animation: slider 15s infinite linear;
+}
+
+#Services .services-container:hover .group {
+    animation-play-state: paused;
+}
+
+#Services .services-container::-webkit-scrollbar {
+    display: none;
+}
+
+#Services .services-container .group .service {
+    flex: 0 0 280px;
+    height: 180px;
+    text-align: center;
+}
+
+#Services .services-container .group .service i {
+    color: var(--primary-color);
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+#Services .services-container .group .service h4 {
+    margin-block: 15px;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+}
+
+#Services .services-container .group .service p {
+    color: var(--paragraph-color);
+    letter-spacing: 1.5px;
+    font-size: 13px;
 }
