@@ -195,13 +195,13 @@ header .container .part-2 .content h3 {
 }
 
 /**  Browse Section  */
-#collections .container .title h2 {
+#Collections .container .title h2 {
     position: relative;
     font-size: 28px;
     margin-bottom: 40px;
 }
 
-#collections .container .title h2::before {
+#Collections .container .title h2::before {
     content: "";
     position: absolute;
     width: 80px;
@@ -213,31 +213,140 @@ header .container .part-2 .content h3 {
     background-color: var(--primary-color);
 }
 
-#collections .container .collection {
+#Collections .container .collection {
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
 }
 
-#collections .container .collection .box {
+#Collections .container .collection .box {
     width: calc(100% / 6);
 }
 
-#collections .container .collection .box .item {
+#Collections .container .collection .box .item {
     width: 90%;
     margin: auto;
     border-radius: var(--border-r);
     overflow: hidden;
 }
 
-#collections .container .collection .box .item img {
+#Collections .container .collection .box .item img {
     width: 100%;
     transition-duration: .5s;
     filter: blur(1px);
     filter: brightness(70%);
 }
-#collections .container .collection .box .item:hover img{
+
+#Collections .container .collection .box .item:hover img {
     filter: brightness(100%);
     filter: blur(0);
     transform: scale(1.1);
+}
+
+/** Signature Section */
+#Signature .container .section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#Signature .container .section-header .title p {
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+#Signature .container .section-header .title h3 {
+    font-size: 25px;
+}
+
+#Signature .container .section-header a {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    transition-duration: .3s;
+}
+
+#Signature .container .section-header a:hover {
+    color: var(--primary-hover);
+    border-color: var(--primary-hover);
+}
+
+#Signature .container .section-content {
+    margin-block: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#Signature .container .section-content .card {
+    width: 25%;
+    border: none;
+    background-color: transparent;
+}
+
+#Signature .container .section-content .card .item {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#Signature .container .section-content .card .item .image {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-r);
+}
+
+#Signature .container .section-content .card .item .image img {
+    width: 100%;
+    transition-duration: .5s;
+}
+
+#Signature .container .section-content .card .item .image:hover img {
+    transform: scale(1.1);
+    filter: brightness(75%);
+}
+
+#Signature .container .section-content .card .item .image a {
+    position: absolute;
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: var(--border-r);
+    width: 80%;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 150%);
+}
+
+#Signature .container .section-content .card .item .image:hover a {
+    transition-duration: .5s;
+    transform: translate(-50%, 0%);
+}
+
+#Signature .container .section-content .card .item .content {
+    text-align: center;
+    padding: 15px 5px;
+}
+
+#Signature .container .section-content .card .item .content h4 {
+    font-size: 16px;
+}
+
+#Signature .container .section-content .card .item .content p {
+    color: var(--paragraph-color);
+    margin-bottom: 5px;
+}
+
+#Signature .container .section-content .card .item .content .icons {
+    user-select: none;
+}
+
+#Signature .container .section-content .card .item .content .icons i {
+    color: var(--primary-hover);
+    transition-duration: .5s;
+}
+
+#Signature .container .section-content .card .item .content .icons i:hover {
+    transform: translateY(-8px);
 }

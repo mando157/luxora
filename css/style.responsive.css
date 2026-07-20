@@ -62,9 +62,27 @@
     }
 
     /*&  Browse Section  */
-    #collections .container .collection .box {
+    #Collections .container .collection .box {
         margin: auto;
         width: 40%;
+        margin-bottom: 15px;
+    }
+
+    /*& Signature Section */
+    #Signature .container .section-header .title h3 {
+        font-size: 16px;
+    }
+
+    #Signature .container .section-header a {
+        font-size: 12px;
+    }
+
+    #Signature .container .section-content .card {
+        width: 280px;
+        margin: auto;
+    }
+
+    #Signature .container .section-content .card:not(:last-child) {
         margin-bottom: 15px;
     }
 
@@ -81,6 +99,7 @@
 
 /* 650 */
 @media (min-width: 577px) and (max-width: 1300px) {
+
     /*& Header Section */
     header .container .part-1 .caption {
         font-size: 14px;
@@ -97,14 +116,32 @@
     }
 
     /*&  Browse Section  */
-    #collections .container .collection .box {
+    #Collections .container .collection .box {
         width: 33.33%;
+        margin-bottom: 15px;
+    }
+
+    /*& Signature Section */
+    #Signature .container .section-header .title h3 {
+        font-size: 20px;
+    }
+
+    #Signature .container .section-header a {
+        font-size: 14px;
+    }
+
+    #Signature .container .section-content .card {
+        width: 50%;
+    }
+
+    #Signature .container .section-content .card {
         margin-bottom: 15px;
     }
 }
 
 /* 850 */
 @media (min-width: 769px) and (max-width: 1300px) {
+
     /*& Header Section */
     header {
         height: calc(100vh - 80px);
@@ -126,9 +163,40 @@
     }
 
     /*&  Browse Section  */
-    #collections .container .collection .box {
+    #Collections .container .collection .box {
         width: calc(100% / 6);
         margin-bottom: 0px;
+    }
+
+    /*& Signature Section */
+    #Signature .container .section-header .title h3 {
+        font-size: 25px;
+    }
+
+    #Signature .container .section-content .card {
+        width: 25%;
+        margin: 0;
+    }
+
+    #Signature .container .section-content .card:not(:last-child) {
+        margin-bottom: 0px;
+    }
+
+    #Signature .container .section-content .card .item .image a {
+        padding: 2px;
+    }
+
+    #Signature .container .section-content .card .item .content h4 {
+        font-size: 12px;
+    }
+
+    #Signature .container .section-content .card .item .content p {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+
+    #Signature .container .section-content .card .item .content .icons i {
+        font-size: 12px;
     }
 }
 
@@ -149,6 +217,23 @@
 
     header .container .part-1 h1 {
         font-size: 45px;
+    }
+
+    /*& Signature Section */
+    #Signature .container .section-content .card .item .image a {
+        padding: 5px;
+    }
+
+    #Signature .container .section-content .card .item .content h4 {
+        font-size: 16px;
+    }
+
+    #Signature .container .section-content .card .item .content p {
+        font-size: 16px;
+    }
+
+    #Signature .container .section-content .card .item .content .icons i {
+        font-size: 16px;
     }
 
 }
