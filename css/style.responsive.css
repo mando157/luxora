@@ -62,6 +62,10 @@
     }
 
     /*&  Browse Section  */
+    #Collections .container .title h2 {
+        font-size: 20px;
+    }
+
     #Collections .container .collection .box {
         margin: auto;
         width: 40%;
@@ -70,7 +74,7 @@
 
     /*& Signature Section */
     #Signature .container .section-header .title h3 {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     #Signature .container .section-header a {
@@ -116,6 +120,10 @@
     }
 
     /*&  Browse Section  */
+    #Collections .container .title h2 {
+        font-size: 24px;
+    }
+
     #Collections .container .collection .box {
         width: 33.33%;
         margin-bottom: 15px;
@@ -123,7 +131,7 @@
 
     /*& Signature Section */
     #Signature .container .section-header .title h3 {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     #Signature .container .section-header a {
