@@ -8,7 +8,6 @@
 
     nav .container .navbar-content {
         position: relative;
-        background-color: rgb(252, 249, 248, .8);
     }
 
     nav .container .navbar-toggler {
@@ -120,6 +119,28 @@
 
     #Services .services-container .group .service p {
         font-size: 12px;
+    }
+
+    /*& About Us Section */
+    #About .container {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    #About .container .image {
+        width: 100%;
+    }
+
+    #About .container .content {
+        width: 100%;
+    }
+
+    #About .container .content :nth-child(1) {
+        text-align: center;
+    }
+
+    #About .container .content p {
+        font-size: 14px;
     }
 
 }
@@ -272,10 +293,36 @@
     }
 
     /*& Announcement Section */
-
     #Announcement .container .content h2 {
         font-size: 35px;
     }
+
+    /*& About Us Section */
+    #About .container {
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    #About .container .image {
+        width: 50%;
+    }
+
+    #About .container .content {
+        width: 50%;
+    }
+
+    #About .container .content :nth-child(1) {
+        text-align: left;
+    }
+
+    #About .container .content h2 {
+        font-size: 25px;
+    }
+
+    #About .container .content p {
+        font-size: 14px;
+    }
+
 }
 
 /* 1050 */
@@ -324,4 +371,14 @@
 }
 
 /* 1250 */
-@media (min-width: 1181px) and (max-width: 1300px) {}
+@media (min-width: 1181px) and (max-width: 1300px) {
+    /*& About Us Section */
+
+    #About .container .content h2 {
+        font-size: 30px;
+    }
+
+    #About .container .content p {
+        font-size: 16px;
+    }
+}
