@@ -90,6 +90,21 @@
         margin-bottom: 15px;
     }
 
+    /*& Announcement Section */
+
+    #Announcement .container .content p {
+        font-size: 12px;
+    }
+
+    #Announcement .container .content h2 {
+        font-size: 20px;
+    }
+
+    #Announcement .container .content a {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
 }
 
 /* 450 */
@@ -98,6 +113,20 @@
     /*& Header Section */
     header .container .part-2 {
         width: 300px;
+    }
+
+    /*& Signature Section */
+
+    #Announcement .container .content p {
+        font-size: 14px;
+    }
+
+    #Announcement .container .content h2 {
+        font-size: 25px;
+    }
+
+    #Announcement .container .content a {
+        padding: 8px 15px;
     }
 }
 
@@ -144,6 +173,21 @@
 
     #Signature .container .section-content .card {
         margin-bottom: 15px;
+    }
+
+    /*& Announcement Section */
+
+    #Announcement .container .content p {
+        font-size: 16px;
+    }
+
+    #Announcement .container .content h2 {
+        font-size: 30px;
+    }
+
+    #Announcement .container .content a {
+        padding: 8px 20px;
+        font-size: 14px;
     }
 }
 
@@ -206,6 +250,12 @@
     #Signature .container .section-content .card .item .content .icons i {
         font-size: 12px;
     }
+
+    /*& Announcement Section */
+
+    #Announcement .container .content h2 {
+        font-size: 35px;
+    }
 }
 
 /* 1050 */
@@ -242,6 +292,13 @@
 
     #Signature .container .section-content .card .item .content .icons i {
         font-size: 16px;
+    }
+
+
+    /*& Announcement Section */
+
+    #Announcement .container .content h2 {
+        font-size: 40px;
     }
 
 }

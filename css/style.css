@@ -350,3 +350,69 @@ header .container .part-2 .content h3 {
 #Signature .container .section-content .card .item .content .icons i:hover {
     transform: translateY(-8px);
 }
+
+/** Announcement Section */
+
+#Announcement .container {
+    position: relative;
+    background-image: url(../images/anouen.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: var(--border-r);
+    height: 450px;
+    overflow: hidden;
+}
+
+#Announcement .container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+#Announcement .container .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+    color: #fff;
+}
+
+#Announcement .container .content p {
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+#Announcement .container .content h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin: 20px 0px 28px;
+}
+
+#Announcement .container .content a {
+    color: #000;
+    background-color: #fff;
+    padding: 8px 20px;
+    border-radius: var(--border-r);
+    font-size: 14px;
+    transition-duration: .3s;
+}
+
+#Announcement .container .content a:hover {
+    background-color: var(--primary-hover);
+    color: #fff;
+}
+#Announcement .container .content a i{
+    transition-duration: .3s;
+}
+#Announcement .container .content a:hover i {
+    transform: translateX(5px);
+}
