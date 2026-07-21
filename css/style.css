@@ -1,3 +1,22 @@
+/*! Modal !*/
+.modal .modal-content h5 {
+    color: var(--primary-color);
+}
+.modal .modal-content .modal-header {
+    border-color: var(--primary-color) ;
+}
+.modal .modal-content .modal-footer button {
+    background-color: #000;
+    border-radius: var(--border-r);
+    border: none;
+    transition-duration: .3s;
+}
+.modal .modal-content .modal-footer button:hover {
+    background-color: var(--primary-hover);
+}
+.modal .modal-content .modal-footer {
+    border-color: var(--primary-color) ;
+}
 /** Navbar Section*/
 nav {
     position: fixed !important;
@@ -682,6 +701,11 @@ footer .container .header .part-2 form input {
     border-radius: var(--border-r);
 }
 
+footer .container .header .part-2 form input:focus-visible {
+    border: 2px solid var(--primary-color);
+    outline: none;
+}
+
 footer .container .header .part-2 form button {
     border: none;
     border-radius: var(--border-r);
@@ -724,11 +748,13 @@ footer .body .part-1 .icons i {
 footer .body .part-1 .icons i:hover {
     color: var(--primary-hover);
 }
+
 footer .body .ul {
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
 }
+
 footer .body .part-2 h3,
 footer .body .part-3 h3,
 footer .body .part-4 h3 {
@@ -779,6 +805,7 @@ footer .footer .icons i {
     margin-left: 5px;
     transition-duration: .3s;
 }
+
 footer .footer .icons i:hover {
     color: var(--paragraph-color);
 }

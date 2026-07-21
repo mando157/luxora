@@ -31,6 +31,23 @@
 </head>
 
 <body>
+    <!--! Modal !-->
+    <div class="modal fade text-center" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Summer Collection</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    This Feature doesn't available right now
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--*-------- Navbar Section --------*-->
     <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container">
@@ -52,19 +69,19 @@
                         <a class="nav-link" href="#Collections">COLLECTIONS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">BOUTIQUE</a>
+                        <a class="nav-link" href="#Signature">BOUTIQUE</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">JOURNAL</a>
+                        <a class="nav-link" href="#FeedBack">REFLECTIONS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ATELIER</a>
+                        <a class="nav-link" href="#footer">JOURNAL</a>
                     </li>
                 </ul>
 
                 <div class="icons d-flex">
-                    <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-                    <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-bag-shopping"></i></a>
                 </div>
             </div>
         </div>
@@ -81,10 +98,10 @@
                     craftsmanship and effortless minimalism.</p>
                 <div class="buttons">
                     <button>
-                        <a href="">Shop Now</a>
+                        <a href="#Signature">Shop Now</a>
                     </button>
                     <button>
-                        <a href="">Explore</a>
+                        <a href="#About">Explore</a>
                     </button>
                 </div>
             </div>
@@ -149,7 +166,7 @@
                     <p>NEW ARRIVALS</p>
                     <h3>The Signature Series</h3>
                 </div>
-                <a href="#">View All</a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">View All</a>
             </div>
 
             <div class="section-content">
@@ -243,7 +260,7 @@
             <div class="content">
                 <p>Summer Collection</p>
                 <h2>Elevate Your Summer Style</h2>
-                <a href="#">Explore Now
+                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Explore Now
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
@@ -333,7 +350,7 @@
                     LUXORA celebrates the art of refined minimalism. Every piece in our
                     collection is a testament to timeless design and uncompromising
                     quality, meticulously curated to elevate the everyday.</p>
-                <a class="text-black fs-6" href="#">LEARN MORE
+                <a class="text-black fs-6" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">LEARN MORE
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
@@ -437,7 +454,7 @@
     </section>
 
     <!--*-------- Footer Section --------*-->
-    <footer>
+    <footer id="footer">
         <div class="container">
             <div class="header">
                 <div class="part-1">
