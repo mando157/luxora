@@ -143,6 +143,21 @@
         font-size: 14px;
     }
 
+    /*& FeedBack Section */
+    #FeedBack .feedBack-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #FeedBack .feedBack-container .group {
+        width: 280px;
+    }
+
+    #FeedBack .feedBack-container .group .card p {
+        color: var(--paragraph-color);
+        font-size: 12px;
+    }
+
 }
 
 /* 450 */
@@ -228,7 +243,15 @@
         font-size: 14px;
     }
 
-    /*& Services Section */
+    /*& FeedBack Section */
+    #FeedBack .feedBack-container {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    #FeedBack .feedBack-container .group {
+        width: calc(50% - 10px);
+    }
 
 }
 
@@ -368,6 +391,21 @@
         font-size: 40px;
     }
 
+    /*& FeedBack Section */
+    #FeedBack .feedBack-container {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    #FeedBack .feedBack-container .group {
+        width: calc(25% - 10px);
+    }
+
+
+    #FeedBack .feedBack-container .group .card p {
+        color: var(--paragraph-color);
+        font-size: 16px;
+    }
 }
 
 /* 1250 */
@@ -381,4 +419,5 @@
     #About .container .content p {
         font-size: 16px;
     }
+
 }
