@@ -176,6 +176,44 @@
     #Contact .container .part-2 form button {
         width: 100%;
     }
+
+    /*^ footer header */
+
+    footer .container .header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    footer .container .header .part-1 {
+        width: 100%;
+    }
+
+    footer .container .header .part-2 {
+        width: 100%;
+    }
+
+    footer .container .header .part-2 form {
+        width: 100%;
+    }
+
+    /*^ footer body */
+    footer .body {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer .body .ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /*^ Footer footer */
+    footer .footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
 }
 
 /* 450 */
@@ -269,6 +307,12 @@
 
     #FeedBack .feedBack-container .group {
         width: calc(50% - 10px);
+    }
+
+    /*^ footer body */
+    footer .body .ul {
+        justify-content: space-between;
+        flex-direction: row;
     }
 
 }
@@ -381,6 +425,59 @@
 
     #Contact .container .part-2 form button {
         width: fit-content;
+    }
+
+    /*^ footer header */
+
+    footer .container .header {
+        flex-direction: row;
+        gap: 0px;
+        text-align: left;
+    }
+
+    footer .container .header .part-1 {
+        width: 50%;
+    }
+
+    footer .container .header .part-2 {
+        width: 50%;
+    }
+
+    footer .container .header .part-2 form {
+        width: 90%;
+    }
+
+    /*^ footer body */
+    footer .body {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    footer .body .part-1 p {
+        width: 90%;
+    }
+
+    footer .body .ul {
+        gap: 50px;
+    }
+
+    footer .body .part-2 h3,
+    footer .body .part-3 h3,
+    footer .body .part-4 h3 {
+        font-size: 16px;
+    }
+
+    footer .body .part-2 ul li a,
+    footer .body .part-3 ul li a,
+    footer .body .part-4 ul li a {
+        font-size: 14px;
+    }
+
+    /*^ Footer footer */
+    footer .footer {
+        flex-direction: row;
+        gap: 0px;
+        text-align: left;
     }
 }
 

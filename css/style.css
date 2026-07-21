@@ -562,6 +562,9 @@ header .container .part-2 .content h3 {
 }
 
 /** Contact Us Section */
+#Contact {
+    margin-block: 40px;
+}
 
 #Contact .container {
     display: flex;
@@ -578,10 +581,6 @@ header .container .part-2 .content h3 {
     background-size: cover;
     background-position: center;
 }
-
-/* #Contact .container .part-1 .image img {
-    width: 100%;
-} */
 
 #Contact .container .part-2 {
     width: 50%;
@@ -604,20 +603,24 @@ header .container .part-2 .content h3 {
     flex-direction: column;
     gap: 2px;
 }
+
 #Contact .container .part-2 form .box input,
-#Contact .container .part-2 form .box textarea{
+#Contact .container .part-2 form .box textarea {
     padding: 5px 10px;
 }
+
 #Contact .container .part-2 form .box input:focus-visible,
-#Contact .container .part-2 form .box textarea:focus-visible{
+#Contact .container .part-2 form .box textarea:focus-visible {
     border: 2px solid var(--primary-color);
     outline: none;
 }
+
 #Contact .container .part-2 form .box textarea {
     resize: none;
     height: 160px;
 
 }
+
 #Contact .container .part-2 form button {
     width: fit-content;
     padding: 10px 30px;
@@ -632,4 +635,150 @@ header .container .part-2 .content h3 {
 #Contact .container .part-2 form button:hover {
     background-color: var(--primary-hover);
     color: #000;
+}
+
+/** Footer Section */
+footer {
+    padding: 40px 0px 0px;
+    background-color: #F6F3F2;
+    border-top: 1px solid var(--primary-hover);
+
+}
+
+/*^ footer header */
+
+footer .container .header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--primary-hover);
+    padding-bottom: 40px;
+}
+
+footer .container .header .part-1 {
+    width: 50%;
+}
+
+footer .container .header .part-1 p {
+    color: var(--paragraph-color);
+    font-size: 14px;
+    margin: 0;
+}
+
+footer .container .header .part-2 {
+    width: 50%;
+}
+
+footer .container .header .part-2 form {
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+}
+
+footer .container .header .part-2 form input {
+    margin-right: 10px;
+    padding: 10px 20px;
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-r);
+}
+
+footer .container .header .part-2 form button {
+    border: none;
+    border-radius: var(--border-r);
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    transition-duration: .3s;
+}
+
+footer .container .header .part-2 form button:hover {
+    background-color: var(--primary-hover);
+}
+
+/*^ footer body */
+
+footer .body {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    gap: 50px;
+    border-bottom: 1px solid var(--primary-hover);
+}
+
+footer .body .part-1 img {
+    width: 150px;
+}
+
+footer .body .part-1 p {
+    color: var(--paragraph-color);
+    font-size: 14px;
+    width: 100%;
+}
+
+footer .body .part-1 .icons i {
+    margin-right: 5px;
+    color: var(--primary-color);
+    transition-duration: .3s;
+}
+
+footer .body .part-1 .icons i:hover {
+    color: var(--primary-hover);
+}
+footer .body .ul {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+footer .body .part-2 h3,
+footer .body .part-3 h3,
+footer .body .part-4 h3 {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+footer .body .part-2 ul,
+footer .body .part-3 ul,
+footer .body .part-4 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 0px;
+    padding: 0;
+}
+
+footer .body .part-2 ul li a,
+footer .body .part-3 ul li a,
+footer .body .part-4 ul li a {
+    color: var(--primary-color);
+    transition-duration: .3s;
+}
+
+footer .body .part-2 ul li a:hover,
+footer .body .part-3 ul li a:hover,
+footer .body .part-4 ul li a:hover {
+    text-decoration: underline;
+    color: var(--primary-hover);
+}
+
+/*^ Footer footer */
+
+footer .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 20px;
+}
+
+footer .footer p {
+    margin: 0;
+}
+
+footer .footer .icons i {
+    color: var(--primary-hover);
+    margin-left: 5px;
+    transition-duration: .3s;
+}
+footer .footer .icons i:hover {
+    color: var(--paragraph-color);
 }
