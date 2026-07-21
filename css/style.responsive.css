@@ -158,6 +158,24 @@
         font-size: 12px;
     }
 
+    /*& Contact Us Section */
+
+    #Contact .container {
+        flex-direction: column;
+    }
+
+    #Contact .container .part-1 {
+        width: 100%;
+        height: 280px;
+    }
+
+    #Contact .container .part-2 {
+        width: 100%;
+    }
+
+    #Contact .container .part-2 form button {
+        width: 100%;
+    }
 }
 
 /* 450 */
@@ -346,6 +364,24 @@
         font-size: 14px;
     }
 
+    /*& Contact Us Section */
+
+    #Contact .container {
+        flex-direction: row;
+    }
+
+    #Contact .container .part-1 {
+        width: 50%;
+        height: initial;
+    }
+
+    #Contact .container .part-2 {
+        width: 50%;
+    }
+
+    #Contact .container .part-2 form button {
+        width: fit-content;
+    }
 }
 
 /* 1050 */
